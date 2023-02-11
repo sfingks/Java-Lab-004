@@ -1,12 +1,27 @@
+/**
+ * @author Trevor Hartman
+ * @author MK Ripley
+ *
+ * @since Version 1.0
+ * 2/10/2023
+ **/
+
 import java.util.Scanner;
 
-public class SimpleMethod2 {
-    // Put your method code here, takes 1 integer, squares it, returns the integer result of the square.
+    public class SimpleMethod2 {
 
-    public static void main(String[] args) {
-        // Put scanner code to get integer input here
-        // Modify the below call to assign the result of the method call to a variable.
-        square(input);
-        // Put the result System.out code here.
+        public static void square(double x) {
+            double theRadians = (x*x); //squares the number
+            System.out.println(theRadians); //prints the result
+        }
+
+
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print("Type the integer you want squared: "); //asks for user input
+            double product = Double.valueOf(scanner.nextLine()); //scans for user input
+
+            square(product); //runs the method for squaring the user input and printing
+        }
     }
-}
