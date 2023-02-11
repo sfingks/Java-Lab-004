@@ -6,13 +6,11 @@
  * 2/10/2023
  **/
 public class SimpleMethod {
-    // Put your method code here
 public static void square(int x){
-    int product = (x*x);
-    System.out.println(product);
+    int product = (x*x); //squares the input
+    System.out.println(product); //prints the result
 }
     public static void main(String[] args) {
-        // This is the method call, create the square method.
-        square(25);
+        square(25); //calls the method
     }
 }

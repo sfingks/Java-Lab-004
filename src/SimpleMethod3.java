@@ -18,12 +18,12 @@ public class SimpleMethod3 {
      */
 
     public static int square(int number) {
-        int theInt = (int) Math.pow(number, 2);
+        int theInt = (int) Math.pow(number, 2); //squares ints using Math.pow
         return theInt;
     }
 
     public static double square(double number) {
-        double theDouble = Math.pow(number, 2);
+        double theDouble = Math.pow(number, 2); //squares doubles using Math.pow
         return theDouble;
     }
 
